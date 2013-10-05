@@ -36,7 +36,7 @@ class RestroController < UITableViewController
     searchBar.resignFirstResponder
   end
   def tableView(tableView, numberOfRowsInSection:section)
-    @restaurants.count 
+    @restaurants.count
   end
 
   def tableView(tableView, cellForRowAtIndexPath:indexPath)
@@ -53,5 +53,10 @@ class RestroController < UITableViewController
     
     cell
   end
+  def tableView(tableView, didSelectRowAtIndexPath:indexPath)
+    detail_controller = DetailController.alloc.init
+    detail_controller.restaurant = @restaurants[indexPath.row]
 
+    self.navigationController.pushViewController(detail_controller, animated:true)
+  end
 end
