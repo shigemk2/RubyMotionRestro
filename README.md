@@ -1,8 +1,6 @@
 RubyMotionRestro
 ================
 
-UserInterfaceApplication
-========================
 
 This is sample [RubyMotion iOS Develoment Essentials on Chapter5](http://www.amazon.co.jp/RubyMotion-iOS-Develoment-Essentials-ebook/dp/B00DZJA81Y)
 
